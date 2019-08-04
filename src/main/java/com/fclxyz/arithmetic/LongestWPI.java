@@ -49,6 +49,8 @@ public class LongestWPI {
 
         System.out.println(Arrays.toString(presum));
 
+
+        // 顺序生成单调栈，栈中元素从第一个元素开始严格单调递减，最后一个元素肯定是数组中的最小元素所在位置
         int ans = 0;
         Stack<Integer> stack = new Stack<>();
 
@@ -57,7 +59,8 @@ public class LongestWPI {
                 stack.add(i);
             }
         }
-        // 顺序生成单调栈，栈中元素从第一个元素开始严格单调递减，最后一个元素肯定是数组中的最小元素所在位置
+
+        System.out.println(stack);
         // 倒序扫描数组，求最大长度坡
         int i = length;
 
