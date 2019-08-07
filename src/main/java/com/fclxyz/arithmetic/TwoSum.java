@@ -24,11 +24,11 @@ import java.util.Map;
 public class TwoSum {
     public static void main(String[] args) {
         int target = 15;
-        int[] result = twoSum(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 33, 12}, target);
+        int[] result = solution(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 33, 12}, target);
         System.out.println(result[0] + "," + result[1]);
     }
 
-    private static int[] twoSum(int[] nums, final int target) {
+    private static int[] solution(int[] nums, final int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int num = nums[i];
