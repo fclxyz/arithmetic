@@ -29,11 +29,11 @@ public class AddTwoNumbers {
         second.add(6);
         second.add(9);
 
-        List<Integer> result = addTwoNumbers(first, second);
+        List<Integer> result = solution(first, second);
         System.out.println(result);
     }
 
-    private static List<Integer> addTwoNumbers(List<Integer> first, List<Integer> second) {
+    private static List<Integer> solution(List<Integer> first, List<Integer> second) {
         List<Integer> result = new LinkedList<>();
         int firstLength = first.size();
         int secondlength = second.size();
